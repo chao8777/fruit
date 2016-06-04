@@ -7,15 +7,18 @@ angular.module("fruitApp").controller("userController", ["$scope", "serviceApi",
     console.log(serviceApi);
 
 }]).controller("userAddressController", ["$scope", "serviceApi", function ($scope, serviceApi) {
-    console.log("userAddressController");
-
+    serviceApi.addresslist().success(function(result){
+        if (serviceApi.checkAjaxStatus(result)) {
+            $scope.data = result.data;
+        }
+    });
 
 }]).controller("userCouponController", ["$scope", "serviceApi", function ($scope, serviceApi) {
     serviceApi.getcouponlist().success(function (result) {
         if (serviceApi.checkAjaxStatus(result)) {
             $scope.data = result.data;
         }
-    })
+    });
     $scope.bindcoupon=function(){
         var coupon = $scope.couponcode;
         if(!coupon){
@@ -26,7 +29,7 @@ angular.module("fruitApp").controller("userController", ["$scope", "serviceApi",
             if (serviceApi.checkAjaxStatus(result)) {
                 tools.alert("兑换成功");
             }
-        })
+        });
     }
 }]).controller("userCatController", ["$scope", "serviceApi", function ($scope, serviceApi) {
     console.log("userCatController")
