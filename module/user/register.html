@@ -1,0 +1,32 @@
+<div id="mod-pageview-2" class="mod-verify mod-pageview pageview-hadtitle pageview-isroot">
+    <header class="pub-header spline-bottom theme-spline">
+        <span class="tap-action header-icon header-left header-icon-back" data-tap="back"
+              style="display: block;"></span>
+
+        <div class="header-content ui-ellipsis tap-action" data-tap="titleTap">注册</div>
+        <span class="tap-action header-icon header-right header-icon-"></span>
+
+        <div class="header-percent theme-bg"></div>
+    </header>
+    <div class="main" data-bind-login="1">
+        <form id="autocomplete-form" class="mod-order-common login-form" onsubmit="return false;">
+            <div class="pic theme-bg">
+                <p class="pic-word">为了方便您及时查询订单信息，鲜蜂侠需要验证您的手机号为查询帐号</p>
+            </div>
+            <div class="inputs block">
+                <div class="padding-small theme-spline spline-bottom">
+                    <input name="mobile" id="autocomplete-phone" ng-model="mobile" class="phone login-input-phone login-input fix-undo"
+                           type="tel" placeholder="手机号码">
+                    <span class="submit login-send theme-bg">获取验证码</span>
+                </div>
+                <div class="padding-small">
+                    <input type="password" ng-model="code" class="code login-input-code login-input fix-undo" placeholder="验证码">
+                </div>
+            </div>
+
+            <!--<p class="login-voice-wrap">收不到短信？使用<span class="ui-bluelink login-voice-link">语音验证码</span></p>-->
+
+            <div type="button" ng-click="loginSubmit()" class="theme-btn-full login-submit">确定</div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,61 @@
+<html lang="en" ng-app="fruitApp">
+<head>
+    <meta charset="UTF-8">
+    <title>爱鲜蜂</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="full-screen" content="yes">
+    <link rel="stylesheet" href="css/phone_m.all.css">
+    <link rel="stylesheet" href="css/phone_m_img.all.css">
+    <script type="text/javascript">
+        (function () {
+            var calc = function () {
+                var docElement = document.documentElement;
+                var clientWidthValue = docElement.clientWidth > 480 ? 480 : docElement.clientWidth;
+                docElement.style.fontSize = 10 * (clientWidthValue / 320) + 'px';
+            }
+            calc();
+            window.addEventListener('resize', calc);
+        })();
+    </script>
+</head>
+<body class="bugfix">
+
+<!---导航---->
+<ul id="mod-navs" class="mod-navs theme-spline-top">
+    <li class="navs-item navs-item-menu">
+        <a ng-href="#/product/index">
+            <div class="navs-bubble"></div>
+            闪送超市
+        </a>
+    </li>
+    <li class="navs-item navs-item-cart">
+        <a ng-href="#/cat/index">
+            <div class="navs-bubble navs-bubble-num" style="display: block;">3</div>
+            购物车
+        </a>
+    </li>
+    <li class="navs-item navs-item-mine navs-current">
+        <a ng-href="#/user/index">
+            <div class="navs-bubble"></div>
+            我的
+        </a>
+    </li>
+</ul>
+<!---导航---->
+<div id="mod-container" ui-view class="mod-container clearfix"></div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/ui-router/angular-ui-router.min.js"></script>
+<script src="js/layer/layer.js"></script>
+<script src="js/router.js"></script>
+<script src="js/server-api.js"></script>
+<script src="js/app.js"></script>
+<script src="js/plugin.js"></script>
+</body>
+</html>

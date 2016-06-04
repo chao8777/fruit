@@ -1,0 +1,85 @@
+{
+  message: "",
+  code: 200,
+  data: {
+    address: "四元路20弄小区 41号502室",
+    accept_name: "赵丹",
+    mobile: "13564692877",
+    accept_time: "05月16日 12:00-13:00",
+    create_time: "2016-05-16 01:01:09",
+    checknum: "2246",
+    enableCancel: 0,
+    enableComment: 1,
+    enableDelete: 1,
+    fee_list: [
+      {
+        text: "配送费",
+        value: "0.00"
+      },
+      {
+        text: "服务费",
+        value: "0.00"
+      },
+      {
+        text: "优惠券",
+        value: "10.00"
+      }
+    ],
+    isCommented: 0,
+    order_amount: "40.30",
+    order_no: "x002z20160516010150006771",
+    pay_status: 1,
+    pay_type: 1,
+    payable_amount: "50.30",
+    real_amount: "40.30",
+    status_timeline: [
+      {
+        status_desc: "订单已完成，快来评价吧",
+        status_time: "12:39",
+        status_title: "已完成"
+      },
+      {
+        status_desc: "%商家电话%:{18701803189}",
+        status_time: "11:50",
+        status_title: "已发货"
+      },
+      {
+        status_desc: "请耐心等待配送",
+        status_time: "01:01",
+        status_title: "待发货"
+      },
+      {
+        status_desc: "",
+        status_time: "01:01",
+        status_title: "支付成功"
+      },
+      {
+        status_desc: "下单成功，订单号：x002z20160516010150006771",
+        status_time: "01:01",
+        status_title: "订单提交成功"
+      }
+    ],
+    order_goods: [
+      {
+        goods_id: 1002,
+        goods_type: 1,
+        goods_price: "8.00",
+        real_price: "8.00",
+        goods_nums: 1,
+        goods_img: "http://img01.bqstatic.com/upload/goods/000/001/0141/0000010141.jpg@200w_200h_90Q",
+        is_gift: 0,
+        name: "爱鲜蜂·精品柠檬"
+      },
+      {
+        goods_id: 1002,
+        goods_type: 1,
+        goods_price: "0.00",
+        real_price: "0.00",
+        goods_nums: 1,
+        goods_img: "http://img01.bqstatic.com/upload/goods/000/001/0141/0000010141.jpg@200w_200h_90Q",
+        is_gift: 1,
+        name: "爱鲜蜂·精品柠檬"
+      }
+    ]
+  }
+}

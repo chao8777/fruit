@@ -1,0 +1,34 @@
+<div id="mod-pageview-3" class="mod-addrlist mod-pageview pageview-hadtitle">
+    <header class="pub-header spline-bottom theme-spline">
+        <span class="tap-action header-icon header-left header-icon-back" data-tap="back"></span>
+
+        <div class="header-content ui-ellipsis tap-action" data-tap="titleTap">我的地址</div>
+        <span class="tap-action header-icon header-right header-icon-" data-tap=""></span>
+
+        <div class="header-percent theme-bg"></div>
+    </header>
+    <div class="main scroller" style="overflow-y: auto; overflow-x: hidden;">
+        <div>
+            <div class="addr-gps block tap-action" data-tap="gps" style="display: none;">定位到当前位置</div>
+            <div class="empty-notice theme-grayfont">
+                <div class="notice-icon"></div>
+                您还没有地址哦~<br><span class="theme-spline tap-action" style="display:none;" data-tap="empty"></span></div>
+            <ul class="addr-list block">
+                <li class="addr-item theme-spline spline-list">
+                    <div class="addr-desc tap-action theme-border" data-tap="select|5465259">
+                        <p class="ui-ellipsis">李名&nbsp;&nbsp;&nbsp;18516517692</p>
+
+                        <p class="ui-ellipsis theme-grayfont">七莘路 100号</p>
+                    </div>
+                    <a ng-href="#/user/address/edit" class="addr-edit tap-action" data-tap="edit|5465259"></a>
+                    <div class="addr-del tap-action" data-tap="del|5465259">删除</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="addr-add theme-spline spline-top block">
+        <div class="tap-action theme-btn-big" data-tap="add">
+            +&nbsp;新增地址
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+<div id="mod-pageview-7" class="mod-idea mod-pageview pageview-hadtitle">
+    <header class="pub-header spline-bottom theme-spline">
+        <span class="tap-action header-icon header-left header-icon-back" data-tap="back"></span>
+
+        <div class="header-content ui-ellipsis tap-action" data-tap="titleTap">意见反馈</div>
+        <span class="tap-action header-icon header-right header-icon-" data-tap=""></span>
+
+        <div class="header-percent theme-bg"></div>
+    </header>
+    <div class="main theme-bg-white">
+        <form class="idea-form" onsubmit="return false">
+            <p class="idea-form-desc">您的批评和建议能帮助我们更好完善产品，请留下您的宝贵意见！</p>
+            <ul class="idea-form-types cf">
+                <li><span class="idea-form-type theme-spline theme-grayfont tap-action"
+                          data-tap="select_type|8">商品种类</span></li>
+                <li><span class="idea-form-type theme-spline theme-grayfont tap-action"
+                          data-tap="select_type|9">商品品质</span></li>
+                <li><span class="idea-form-type theme-spline theme-grayfont tap-action"
+                          data-tap="select_type|10">软件功能</span></li>
+                <li><span class="idea-form-type theme-spline theme-grayfont tap-action"
+                          data-tap="select_type|11">促销活动</span></li>
+                <li><span class="idea-form-type theme-spline theme-grayfont tap-action"
+                          data-tap="select_type|12">配送服务</span></li>
+                <li><span class="idea-form-type theme-spline theme-grayfont tap-action"
+                          data-tap="select_type|13">其它问题</span></li>
+            </ul>
+            <input type="hidden" name="type">
+            <textarea class="theme-bg-gray theme-spline" name="comment" placeholder="请输入宝贵意见(300字以内)"></textarea>
+            <button class="idea-submit theme-bg theme-border tap-action" type="submit" maxlength="2" data-tap="submit">
+                提交
+            </button>
+        </form>
+    </div>
+    <div id="mod-loading-3" class="mod-loading ui-hide">
+        <div class="loading-content">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <p><span class="loading-text">加载中</span><span class="loading-status"></span></p>
+        </div>
+    </div>
+</div>

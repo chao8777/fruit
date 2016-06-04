@@ -1,0 +1,78 @@
+<div id="mod-pageview-4" class="mod-addredit mod-pageview pageview-hadtitle">
+    <header class="pub-header spline-bottom theme-spline">
+        <span class="tap-action header-icon header-left header-icon-back" data-tap="back"></span>
+
+        <div class="header-content ui-ellipsis tap-action" data-tap="titleTap">修改地址</div>
+        <span class="tap-action header-icon header-right header-icon-textext" data-tap="save">保存</span>
+
+        <div class="header-percent theme-bg"></div>
+    </header>
+    <div class="main">
+        <form class="edit-form block" onsubmit="return false;">
+            <table class="addr-edit" width="100%">
+                <tbody>
+                <tr class="theme-spline spline-list">
+                    <th>联系人</th>
+                    <td>
+                        <input class="addr-input" type="text" name="accept_name" value="李名" maxlength="10"
+                               placeholder="收货人姓名">
+                    </td>
+                </tr>
+                <tr class="theme-spline spline-list">
+                    <th>&nbsp;</th>
+                    <td>
+                        <input id="addr-gender-2005-1" type="radio" name="gender" value="1" checked=""><label
+                            for="addr-gender-2005-1">先生</label>&nbsp;&nbsp;
+                        <input id="addr-gender-2005-2" type="radio" name="gender" value="2"><label
+                            for="addr-gender-2005-2">女士</label>
+                    </td>
+                </tr>
+                <tr class="theme-spline spline-list">
+                    <th>手机号码</th>
+                    <td>
+                        <input class="addr-input" type="tel" name="telphone" value="18516517692" placeholder="鲜蜂侠联系您的电话"
+                               maxlength="11">
+                    </td>
+                </tr>
+                <tr class="theme-spline spline-list">
+                    <th>所在城市</th>
+                    <td>
+
+                        <select class="addr-city-select" name="city_id">
+                            <option value="">请选择城市</option>
+                            <option value="2">北京市</option>
+                            <option value="22" selected="">上海市</option>
+                            <option value="43">天津市</option>
+                            <option value="424">广州市</option>
+                            <option value="442">佛山市</option>
+                            <option value="524">深圳市</option>
+                            <option value="926">廊坊市</option>
+                            <option value="1644">南京市</option>
+                            <option value="1692">苏州市</option>
+                            <option value="1717">无锡市</option>
+                            <option value="2472">西安市</option>
+                            <option value="2590">成都市</option>
+                            <option value="3134">杭州市</option>
+                            <option value="3268">三河市</option>
+                        </select></td>
+                </tr>
+                <tr class="theme-spline spline-list">
+                    <th>所在地区</th>
+                    <td class="tap-action" data-tap="selectPoi">
+                        <input class="addr-input addr-input-addrhead" type="text" name="address_0" value="七莘路"
+                               placeholder="请选择您的住宅小区、大厦或学校" readonly="">
+                    </td>
+                </tr>
+                <tr class="theme-spline spline-list">
+                    <th>详细地址</th>
+                    <td>
+                        <input class="addr-input" type="text" name="address_1" value="100号" placeholder="请输入楼号门牌号等详细信息">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+        <div class="edit-save theme-btn-light tap-action" data-tap="save">保存</div>
+        <div class="edit-del theme-btn-light tap-action" data-tap="del">删除当前地址</div>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+<div id="mod-pageview-3" class="mod-coupon mod-pageview pageview-hadtitle">
+    <header class="pub-header spline-bottom theme-spline">
+        <span class="tap-action header-icon header-left header-icon-back" goback></span>
+
+        <div class="header-content ui-ellipsis tap-action" data-tap="titleTap">我的优惠券</div>
+        <a ng- class="tap-action header-icon header-right header-icon-textext" data-tap="rules">使用规则</a>
+
+        <div class="header-percent theme-bg"></div>
+    </header>
+    <div class="main">
+        <div class="coupon-bind">
+            <form class="coupon-bind-form" onsubmit="return false;">
+                <div class="inputwrap theme-spline">
+                    <input type="text" maxlength="10" class="inputwrap-input" ng-model="couponcode" placeholder="请输入优惠券号码">
+                    <input type="submit" class="inputwrap-button theme-bg" ng-click="bindcoupon()" value="绑定">
+                </div>
+            </form>
+        </div>
+        <div class="coupon-scroller scroller theme-spline spline-top" style="overflow-y: auto; overflow-x: hidden;">
+            <div>
+                <div class="coupon-nouse tap-action coupon-style" data-tap="select">不使用优惠券</div>
+
+                <ul class="coupon-list">
+                    <li class="coupon-item coupon-item-enable-true tap-action" ng-repeat="obj in data.active">
+                        <div class="coupon-info-left">
+                            <div class="coupon-item-value"><span class="sub">￥</span>{{obj.value}}</div>
+                            <span class="coupon-show-reason tap-action" style="display:none">查看原因</span>
+                        </div>
+                        <div class="coupon-info-right">
+                            <fieldset class="coupon-item-fieldset">
+                                <legend class="coupon-item-name">{{obj.name}}</legend>
+                                <div class="coupon-item-time ui-ellipsis">{{obj.start_time}}至{{obj.end_time}}</div>
+                                <div class="coupon-item-description">{{obj.description}}</div>
+                            </fieldset>
+                        </div>
+                        <div class="coupon-item-radius coupon-item-radius-left"></div>
+                        <div class="coupon-item-radius coupon-item-radius-right">
+                            <div class="icon-ok"></div>
+                        </div>
+                        <div class="coupon-sp"></div>
+                    </li>
+                    <li class="coupon-reason coupon-reason-0 tap-action" data-tap="hideReason">
+                        <ul class="coupon-disabled-reason"></ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
